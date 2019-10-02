@@ -16,20 +16,7 @@ gulp.task('clean', function() {
         .pipe(vinylPaths(del));
 });
 
-// resize
-gulp.task("resize", function() {
-      gulp.src("images/*.{png,jpg,PNG,JPG,JPEG,jpeg}")
-      .pipe(plumber())
-      .pipe(imageResize({
-      width : 1400,
-      crop : true,
-      upscale : false,
-      imageMagick : true
-    }))
-    .pipe(gulp.dest('./images/'));
-});
-
-// min
+// resize & min
 gulp.task("imagemin", function() {
       gulp.src("images/*.{png,jpg,PNG,JPG,JPEG,jpeg}")
       .pipe(plumber())
