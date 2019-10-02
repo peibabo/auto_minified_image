@@ -1,0 +1,1 @@
+imagesフォルダに画像を入れると勝手にリサイズ＆圧縮してminfied_imagesフォルダに格納するgulp
